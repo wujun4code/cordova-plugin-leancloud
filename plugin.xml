@@ -88,5 +88,10 @@
     <source-file src="src/android/leancloud/avoscloud-statistics-v3.13.15.jar" target-dir="libs" framework="true"/>
     <source-file src="src/android/leancloud/fastjson.jar" target-dir="libs" framework="true"/>
     <source-file src="src/android/leancloud/httpmime-4.2.4.jar" target-dir="libs" framework="true"/>
+    <source-file src="src/android/leancloud/avoscloud-mixpush-v3.14.1.jar" target-dir="libs" framework="true"/>
+    <source-file src="src/android/leancloud/HwPush_SDK_V2705.jar" target-dir="libs" framework="true"/>
+    <source-file src="src/android/leancloud/MiPush_SDK_Client_3_0_1.jar" target-dir="libs" framework="true"/>
+    <source-file src="src/android/leancloud/okio-1.6.0-leancloud.jar" target-dir="libs" framework="true"/>
+    <source-file src="src/android/leancloud/protobuf-java-2.6.1.jar" target-dir="libs" framework="true"/>
   </platform>
 </plugin>
