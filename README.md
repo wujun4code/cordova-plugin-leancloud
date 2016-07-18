@@ -15,8 +15,6 @@ Cordova plugin for [LeanCloud](https://leancloud.cn) push notification
 ```
 
 
-
-
 - Add this to your `gulpfile.js`
 
 ```js
@@ -85,11 +83,34 @@ window.LeanPush.onNotificationReceived(callback) // 一个notification到来的�
 //      ios都有，因为ios如果app在前台，系统推送的alert不会出现
 //      用户没有任何操作，app就自动执行notification的函数不好, 可以加个判断
 
-//     'alert':'Notice Text',
-//     'file_url':'Push File',
-//     'key':'value'   if you send JSON Type Push, they will map to here.
 //   }
 // }
+
+服务端推送的格式如下：
+```json
+{
+  "alert":             "消息内容",
+  "category":          "通知分类名称",
+  "badge":             "未读消息数目",
+  "sound":             "声音文件名",
+  "content-available": "如果你在使用 Newsstand，设置为 1 来开始一次后台下载"
+}
+```
+
+客户端接收的格式如下：
+
+```json
+{
+  "alert":             "消息内容",
+  "category":          "通知分类名称",
+  "badge":             "未读消息数目",
+  "sound":             "声音文件名",
+  "content-available": "如果你在使用 Newsstand，设置为 1 来开始一次后台下载"
+  "prevAppState": 'background' or 'foreground' or 'closed'
+}
+```
+
+注：针对 iOS 特殊的接收格式在接收之后做了解包处理，保证和 Android 接收的格式是一样的。因此在  `window.LeanPush.onNotificationReceived(callback)` 可以统一处理格式，无需再判断 deviceType 是 iOS 而做特殊处理。
     
 
 $rootScope.$on('leancloud:notificationReceived', callback) // 如果你用了angular， 一个notification会在scope上broadcast这个event
@@ -259,4 +280,4 @@ android{
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Xinyu Zhang, Derek Hsu
+Copyright (c) 2015 Xinyu Zhang, Derek Hsu,Wu Jun

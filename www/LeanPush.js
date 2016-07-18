@@ -2,13 +2,14 @@ var exec = require('cordova/exec');
 
 module.exports = {
   getInstallation: function(success, error) {
-    console.log('getInstallation');
+   
     exec(function(info) {
+       console.log('LeanPush.js',info);
       var a = info.split(',');
       success({
         'deviceType': a[0],
         installationId: a[1],
-        'deviceToken': a[1]
+        'deviceToken': a[2]
       });
     }, error, "LeanPush", "getInstallation", []);
   },
