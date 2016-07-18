@@ -85,7 +85,7 @@
     <source-file src="src/android/leancloud/okhttp-2.6.0-leancloud.jar" target-dir="libs" framework="true"/>
     <source-file src="src/android/leancloud/avoscloud-push-v3.14.1.jar" target-dir="libs" framework="true"/>
     <source-file src="src/android/leancloud/avoscloud-sdk-v3.14.1.jar" target-dir="libs" framework="true"/>
-    <source-file src="src/android/leancloud/avoscloud-statistics-v3.13.1.jar" target-dir="libs" framework="true"/>
+    <source-file src="src/android/leancloud/avoscloud-statistics-v3.14.1.jar" target-dir="libs" framework="true"/>
     <source-file src="src/android/leancloud/fastjson.jar" target-dir="libs" framework="true"/>
     <source-file src="src/android/leancloud/httpmime-4.2.4.jar" target-dir="libs" framework="true"/>
     <source-file src="src/android/leancloud/avoscloud-mixpush-v3.14.1.jar" target-dir="libs" framework="true"/>
