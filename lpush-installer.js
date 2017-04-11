@@ -68,7 +68,7 @@ function getVariables(root) {
 function patchSource(vars) {
     var root = vars.root;
 
-    var lean_application_path = path.join(root, "platforms/android/src/leancloud/cordova/leancloud/LeanApplication.java"),
+    var lean_application_path = path.join(root, "platforms/android/src/leancloud/cordova/leanpush/LeanApplication.java"),
         android_manifest_path = path.join(root, "platforms/android/AndroidManifest.xml"),
         lpush_main_activity_path = path.join(root, 'plugins/cordova-plugin-leancloud/other/MainActivity.java');
 
