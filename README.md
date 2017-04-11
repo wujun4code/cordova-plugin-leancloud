@@ -9,7 +9,7 @@ cordova-plugin-leanpush
 ### 从源代码安装
 
 ```shell
-cordova plugin add https://github.com/wujun4code/cordova-plugin-leanpush.git  --variable LEAN_APP_ID=<你的 App Id> --variable LEAN_APP_KEY=<你的 App Key>
+cordova plugin add https://github.com/wujun4code/cordova-plugin-leanpush.git  --variable LEAN_APP_ID=<你的 App Id> --variable LEAN_APP_KEY=<你的 App Key> --save
 ```
 
 
@@ -34,11 +34,6 @@ gulp lpush-install
 ```
 
 完成
-
-### 已知问题
-
-[Attention/Android Build Issue](#android-build-issue)
-
 
 ## 使用
 
@@ -242,7 +237,6 @@ android{
     //其他 gradle 的设置
 }
 ```
-
 
 ## LICENSE
 

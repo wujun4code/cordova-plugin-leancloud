@@ -139,7 +139,7 @@
         if([key isEqualToString:@"aps"]){
             NSLog(@"key:%@",key);
             NSDictionary *aps= [command objectForKey:@"aps"];
-             NSLog(@"aps.count:%lu",(unsigned long)[aps count]);
+            NSLog(@"aps.count:%lu",(unsigned long)[aps count]);
             NSArray *allAPNSKeys  = [aps allKeys];
             NSString *apnskey;
             for(apnskey in allAPNSKeys){
