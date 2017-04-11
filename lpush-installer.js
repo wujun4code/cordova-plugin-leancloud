@@ -68,7 +68,7 @@ function getVariables(root) {
 function patchSource(vars) {
     var root = vars.root;
 
-    var lean_application_path = path.join(root, "platforms/android/src/me/xyzhang/cordova/leanpush/LeanApplication.java"),
+    var lean_application_path = path.join(root, "platforms/android/src/me/leancloud/cordova/leanpush/LeanApplication.java"),
         android_manifest_path = path.join(root, "platforms/android/AndroidManifest.xml"),
         lpush_main_activity_path = path.join(root, 'plugins/cordova-plugin-leanpush/other/MainActivity.java');
 
@@ -87,7 +87,7 @@ function patchSource(vars) {
         if (err)
             throw err;
 
-        result.manifest.application[0].$['android:name'] = 'me.xyzhang.cordova.leanpush.LeanApplication';
+        result.manifest.application[0].$['android:name'] = 'me.leancloud.cordova.leanpush.LeanApplication';
         var xml = builder.buildObject(result);
         return writeFile(android_manifest_path, xml);
     })(function(err) {
