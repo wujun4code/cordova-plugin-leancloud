@@ -81,6 +81,6 @@
     <source-file src="src/android/LeanApplication.java" target-dir="src/leancloud/cordova/leanpush"/>
     <source-file src="src/android/LeanPush.java" target-dir="src/leancloud/cordova/leanpush"/>
     <source-file src="src/android/LeanAnalytics.java" target-dir="src/leancloud/cordova/leanpush"/>
-    <source-file src="src/android/leancloud/*.jar" target-dir="libs" framework="true"/>
+    <source-file src="src/android/leancloud/**.jar" target-dir="libs" framework="true"/>
   </platform>
 </plugin>
