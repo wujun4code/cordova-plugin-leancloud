@@ -1,4 +1,4 @@
-package me.leancloud.cordova.leanpush;
+package leancloud.cordova.leanpush;
 
 import android.app.Application;
 import android.content.Context;
