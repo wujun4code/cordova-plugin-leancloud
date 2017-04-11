@@ -22,7 +22,7 @@ package <%PACKAGE_NAME%>;
 
 import android.content.ComponentName;
 import android.app.ActivityManager;
-import leancloud.cordova.leanpush;
+import leancloud.cordova.leanpush.LeanPush;
 import android.os.Bundle;
 import org.apache.cordova.*;
 import java.util.List;
