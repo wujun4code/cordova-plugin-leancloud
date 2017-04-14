@@ -16,8 +16,10 @@ cordova plugin add https://github.com/wujun4code/cordova-plugin-leanpush.git  --
 在 `gulpfile.js` 里面添加如下代码：
 
 ```js
+var leancloudInstaller = require('./plugins/cordova-plugin-leancloud/lpush-installer');
+
 gulp.task('lpush-install', function(done){
-    require('./plugins/cordova-plugin-leanpush/lpush-installer.js')(__dirname, done);
+    leancloudInstaller(__dirname, done);
 });
 ```
 
