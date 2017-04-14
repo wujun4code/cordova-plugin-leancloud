@@ -75,8 +75,6 @@ function patchSource(vars) {
     var app_id = vars.app_id,
         app_key = vars.app_key,
         package_name = vars.package_name;
-
-
     
 
     return readFile(android_manifest_path)(function(err, data) {
