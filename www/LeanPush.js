@@ -10,8 +10,8 @@ module.exports = {
       var deviceType = a[0];
       var installationId = a[1];
       var deviceToken = '';
-      if (a.length == 3) {
-        deviceToken = a[2];
+      if (a.length == 4) {
+        deviceToken = a[3];
       }
       success({
         deviceType: deviceType,
