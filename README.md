@@ -9,7 +9,7 @@ cordova-plugin-leanpush
 ### 从源代码安装
 
 ```shell
-cordova plugin add https://github.com/wujun4code/cordova-plugin-leanpush.git  --variable LEAN_APP_ID=<你的 App Id> --variable LEAN_APP_KEY=<你的 App Key> --save
+cordova plugin add https://github.com/leancloud/cordova-plugin-leanpush.git  --variable LEAN_APP_ID=<你的 App Id> --variable LEAN_APP_KEY=<你的 App Key> --save
 ```
 
 
@@ -43,6 +43,10 @@ gulp lpush-install
 
 在 "deviceReady" 方法中初始化 LeanCloud(比如 $ionicPlatform.ready)
 
+#### ionic2.0+
+```js
+declare var window: any;
+```
 ```js
 window.LeanPush.init();
 ```
