@@ -64,7 +64,7 @@
     NSLog(@"CDVLeanPush getInstallation");
     
     AVInstallation *currentInstallation = [AVInstallation currentInstallation];
-    if(currentInstallation != nil && currentInstallation.deviceToken != nil && currentInstallation.installationId != nil) {
+    if(currentInstallation != nil && currentInstallation.deviceToken != nil) {
         NSLog(@"device token: %@", currentInstallation.deviceToken);
         NSString *responseString =[NSString stringWithFormat:@"ios,%@,%@,%@", currentInstallation.objectId,currentInstallation.installationId,currentInstallation.deviceToken];
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:responseString];
